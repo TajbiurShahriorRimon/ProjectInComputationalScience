@@ -121,6 +121,7 @@ class SiteProductDetails extends Component<any, any>{
                     product_name: this.state.result.productName,
                     product_category_name: this.state.result.category.categoryName,
                     product_price: this.state.result.price,
+                    image: this.state.result.thumbnail,
                     product:{
                         productId: productId
                     },
@@ -164,6 +165,7 @@ class SiteProductDetails extends Component<any, any>{
                 product_name: this.state.result.productName,
                 product_category_name: this.state.result.category.categoryName,
                 product_price: this.state.result.price,
+                image: this.state.result.thumbnail,
                 product:{
                     productId: productId
                 },
