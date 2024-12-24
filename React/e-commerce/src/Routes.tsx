@@ -50,6 +50,9 @@ import ProductEdit from "./components/Pages/ProductEdit";
 import DailySales from "./components/Pages/DailySales";
 import ProductDailySales from "./components/Pages/ProductDailySales";
 
+import Payment from './components/Pages/Payment';
+import Completion from './components/Body/sitePaymentCompletion';
+
 function MainRoutes(){
     return(
         <div>
@@ -115,6 +118,10 @@ function MainRoutes(){
 
                     {/*Logout*/}
                     <Route path="/logout" element={<Logout/>}/>
+
+                    {/* Payment */}
+                    <Route path="/checkout" element={<Payment/>} />
+                    <Route path="/payment/completion" element={<Completion/>} />
 
             </Routes>
         </div>

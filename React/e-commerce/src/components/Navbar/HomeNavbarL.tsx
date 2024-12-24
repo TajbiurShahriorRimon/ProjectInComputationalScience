@@ -9,9 +9,21 @@ import { CgProfile, CgHome } from 'react-icons/cg';
 function HomeNavbar(){
     return(
         <div>
-        <Navbar bg="dark" expand="lg" variant="dark" fixed="top" className="navbar text-opacity-100">
+        <Navbar bg="white" color="white" expand="lg" fixed="top" className="navbar text-opacity-100"
+            style={{ border: "1px solid green" }}>
             <Container>
-                <Navbar.Brand href="/home">Dokan</Navbar.Brand>
+                <Navbar.Brand href="/home">
+                    <img src={require('../Navbar/images/Silton.png')} 
+                        style={{
+                            maxWidth: "50%",
+                            maxHeight: "50%",
+                            
+                            width: "auto",
+                            height: "auto",
+                            objectFit: "contain",
+                            }}
+                    />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-center" style={{ flex: 1}}>
@@ -24,14 +36,14 @@ function HomeNavbar(){
                     </button>
                     <button>
                     <Navbar.Text>
-                    <Nav.Link href="/login">Login</Nav.Link>
+                    <Nav.Link href="/login">Login </Nav.Link>
                     </Navbar.Text>
                     </button>
                     {/* <Nav.Link href="/home">Home</Nav.Link>
                     <Nav.Link href="/login">Login</Nav.Link> */}
 
                     <Nav defaultActiveKey="/home" as="ul">
-                        <NavDropdown title="Registration" id="basic-nav-dropdown">
+                        <NavDropdown title=" Registration" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/customerReg">Customer Registration <CgProfile style={{color:"blue"}}/></NavDropdown.Item>
                             <NavDropdown.Item href="/vendorReg">Vendor Registration <CgHome style={{color:"red"}}/> </NavDropdown.Item>                        
                         </NavDropdown>
@@ -39,7 +51,7 @@ function HomeNavbar(){
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-            <br/> <br/> <br/>
+            <br/> <br/> <br/> <br/> <br/> <br/>
         </div>
     )
 }

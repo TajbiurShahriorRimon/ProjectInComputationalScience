@@ -20,9 +20,21 @@ function VendorNavbar(){
             setVendorNav({
                 vendorNavbar: (
                     <div>
-                        <Navbar bg="dark" expand="lg" variant="dark" fixed="top" className="navbar text-opacity-100">
+                        <Navbar bg="white" color="white" expand="lg" fixed="top" className="navbar text-opacity-100"
+                            style={{ border: "1px solid green" }}>
                             <Container>
-                                <Navbar.Brand href="/home">Dokan</Navbar.Brand>
+                                <Navbar.Brand href="/home">
+                                    <img src={require('../Navbar/images/Silton.png')} 
+                                        style={{
+                                            maxWidth: "50%",
+                                            maxHeight: "50%",
+                                            
+                                            width: "auto",
+                                            height: "auto",
+                                            objectFit: "contain",
+                                            }}
+                                    />
+                                </Navbar.Brand>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="justify-content-center" style={{ flex: 1}}>
@@ -50,7 +62,7 @@ function VendorNavbar(){
                                 </Navbar.Collapse>
                             </Container>
                         </Navbar>
-                        <br/> <br/> <br/>
+                        <br/> <br/> <br/> <br/> <br/> <br/>
                     </div>
                 )
             })

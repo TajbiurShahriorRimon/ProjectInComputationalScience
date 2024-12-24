@@ -94,6 +94,7 @@ class SiteShoppingCart extends Component<any, any>{
         }
     }
 
+    //This function is not needed anymore
     orderProduct = async () => {
         const resp = await axios.post(`${base_url}order`, this.state.orderData);
         //console.log(resp);
@@ -104,6 +105,7 @@ class SiteShoppingCart extends Component<any, any>{
         }
     }
 
+    //This function is not needed anymore
     salesItem = async (order_id: any) => {
         var array = JSON.parse(localStorage.getItem("shoppingCart") || '{}');
         for(let i = 0; i < array.length; i++){
@@ -274,7 +276,7 @@ class SiteShoppingCart extends Component<any, any>{
                                 </li>
                             </ul>
 
-                            <Link to={`/checkout`}>
+                            <Link onClick={() =>{localStorage.setItem("totalPrice", this.state.totalPrice.toString());}} to={`/checkout`}>
                                 <button type="button" className="btn btn-dark btn-lg btn-block">
                                     Checkout <MdShoppingCartCheckout />
                                 </button>

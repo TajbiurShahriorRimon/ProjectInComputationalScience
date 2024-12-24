@@ -18,7 +18,8 @@ export const AdminNavbar = () => {
             setAdminNav({
                 adminNavbar: (
                     <div>
-                        <Navbar color="white" expand="lg" fixed="top" className="navbar text-opacity-100">
+                        <Navbar bg="white" color="white" expand="lg" fixed="top" className="navbar text-opacity-100"
+                            style={{ border: "1px solid green" }}>
                             <Container>
                                 <Navbar.Brand href="/home">
                                     <img src={require('../Navbar/images/Silton.png')} 
@@ -66,24 +67,10 @@ export const AdminNavbar = () => {
                                         <NavDropdown.Item href="/logout">Log Out <HiOutlineLogout style={{color:"red"}}/></NavDropdown.Item>
                                     </NavDropdown>
                                     </Nav>
-                                    <Navbar.Text>
-                                        Signed in as: <a href="#login">Mark Otto</a>
-                                    </Navbar.Text>
-                                    {/* <Nav.Link href="/admin">Home</Nav.Link> */}
-                                    
-                                    {/* <NavDropdown title="Manage Data" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="/aManageUsers">Manage Users <CgUserList style={{color:"blue"}}/></NavDropdown.Item>
-                                        <NavDropdown.Item href="/order/pending">Pending Orders <CgMenuBoxed style={{color:"green"}}/></NavDropdown.Item>
-                                        <NavDropdown.Item href="/category/countProducts">Products by Category <CgList style={{color:"purple"}}/></NavDropdown.Item>
-                                        <NavDropdown.Item href="/order/yearlySales">Yearly Sales <CgChart style={{color:"orange"}}/></NavDropdown.Item>
-                                        
-                                    </NavDropdown> */}
-
-                                    
                                 </Navbar.Collapse>
                             </Container>
                         </Navbar>
-                        <br/> <br/> <br/>
+                        <br/> <br/> <br/> <br/> <br/> <br/>
                     </div>
                 )
             })

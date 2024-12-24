@@ -84,7 +84,7 @@ class AddProductReview extends Component<any, any>{
         if (isValid == true){
         //if(this.state.ratingErr == "" && this.state.reviewDetailsErr == ""){
             var productId = window.location.pathname.split("/").pop();
-            var starRating = (this.state.initialRating)/20;
+            var starRating = (this.state.initialRating);
 
             this.state.reviewAndRating.value = this.state.review;
             this.state.reviewAndRating.rating = starRating;
